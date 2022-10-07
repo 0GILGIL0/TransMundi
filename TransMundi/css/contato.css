@@ -1,0 +1,76 @@
+body{
+    background-color: #d9d9d9;
+    color: #c2932f;
+    font-weight: bold;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: flex-start;
+}
+
+h1{
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+    top: 50px;
+    left: 10%;
+    font-size: 3rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: flex-start;
+    left: 3%;
+    margin: 3% 10%;
+    line-height: 50px;
+    align-content: center;
+}
+
+input, select{
+    width: 250px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: #d9d9d9;
+    display: block;
+}
+
+textarea{
+    display: block;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: #d9d9d9;
+}
+
+.ns, .fc{
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.nome, .sobrenome, .cpf, .email, .cel, .endereco, .assunto, .mensagem, .botao{
+    margin: 0 100px;
+    font-size: 1.5rem;
+}
+
+button{
+    padding: 10px;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    background: #c2932f;
+    color: #d9d9d9;
+
+}
+
+button:hover{
+    transition: 0.2s;
+    transform: scale(1.1);
+}

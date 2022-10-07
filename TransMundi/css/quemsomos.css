@@ -1,0 +1,45 @@
+main{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+body{
+    background-color: #d9d9d9;
+    color: #c2932f;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+.quem-h1{
+    display: block;
+    position: relative;
+    top: -170px;
+
+}
+
+.quem-cont{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 500px;
+    margin-left: 5%;
+    justify-content: space-evenly;
+}
+
+.quem-texto{
+    display: block;
+    position: relative;
+    top: -15%;
+    width: 800px;
+    font-size: 1.5rem;
+}
+
+.quem-img{
+    display: block;
+    margin-right: 100px;
+}

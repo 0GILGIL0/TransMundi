@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TransLocal</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/contato.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <figure>
+                <img src="imagens/NovaLogo.jpg" alt="Logo: TransLocal">
+            </figure>
+            <ul class="menu">
+                <a href="index.html"><li>Início</li></a>
+                <a href="quem.html"><li>Quem Somos</li></a>
+                <a href="servicos.html"><li>Serviços</li></a>
+                <a href="equipe.html"><li>Equipe</li></a>
+                <a href="contato.html"><li>Fale Conosco</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Formulário</h1>
+        <!--Começo do formulário-->
+            <form action="POST" id="formCont">
+                <div class="ns">
+                    <div class="nome">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome_usuario" id="nome" placeholder="Digite" >
+                    </div>
+                    <div class="sobrenome">
+                        <label for="sobrenome">Sobrenome:</label>
+                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite" >
+                    </div>
+                    <div class="cpf">
+                            <label for="cpf">CPF:</label>
+                            <input type="text" inputmode="numeric" name="cpf" id="cpf" placeholder="___.___.___-__"  minlength="11" maxlength="15">
+                        </div>
+                </div>
+
+                <div class="fc">
+                    <div class="email">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email_usuario" id="email" placeholder="Digite" >
+                    </div>
+                    <div class="cel">
+                        <label for="cel">Telefone:</label>
+                        <input type="tel" name="cel_usuario" id="tel" placeholder="() _________"  minlength="11" maxlength="14">
+                    </div>
+                    <div class="endereco">
+                        <label for="cep">Cep:</label>
+                        <input type="text" name="cep" id="cep" inputmode="numeric" placeholder="_____-___"  minlength="8" maxlength="8">
+                    </div>
+                </div>
+                <div class="assunto">
+                    <label for="assunto">Assunto:</label>
+                    <select name="assunto" id="assunto" >
+                        <option value="rc">Reclamação</option>
+                        <option value="dv">Dúvidas</option>
+                        <option value="rt">Rastreamento de carga</option>
+                        <option value="out">Outro</option>
+                    </select>
+                </div>
+                <div class="mensagem">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea name="mensagem_usuario" id="mensagem" placeholder="Escreva a sua mensagem aqui" rows="10" cols="100"></textarea>
+                </div>
+                <div class="botao">
+                    <button type="submit" id="botao" onclick="test()">Enviar</button>
+                </div>
+            </form>
+    </main>
+    <script src="java/Intcontato.js"></script>
+</body>
+
+</html>
